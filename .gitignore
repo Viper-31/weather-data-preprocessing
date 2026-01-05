@@ -1,0 +1,15 @@
+.ICRAR_Venv/
+*temp*
+config*
+dataset_DPIRD_utc0/
+2024/
+*dataset*
+ecmwf_era5.tar.gz
+*.vscode
+rain/
+*.pyc
+archv/
+*.nc
+requirements.txt
+*.sh
+__init__*
