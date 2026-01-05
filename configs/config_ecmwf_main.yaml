@@ -1,0 +1,37 @@
+preprocess: true
+
+untar_ecmwf_dir: /scratch/pawsey0411/jchew/data/ecmwf_untar/ecmwf
+processed_data_dir: /scratch/pawsey0411/jchew/clean_data
+destination_folder: ecmwf-reanalysis
+
+
+sources:
+  ecmwf:
+    valid_coords:
+      - valid_time
+      - pressure_level
+      - latitude
+      - longitude
+
+    vars:
+      - t2m #2m_temperature !
+      - d2m #2m_dewpoint_temperature
+      - sp #surface_pressure
+      - tcc #total_cloud_cover
+      - lcc #low_cloud_cover
+      - mcc #medium_cloud_cover
+      - hcc #high_cloud_cover
+      - u10 #10m_u_component_of_wind !
+      - v10 #10m_v_component_of_wind !
+      - tp #total_precipitation
+      - cp #convective_precipitation
+      - lsp #large_scale_precipitation
+      - w500 #vertical_velocity
+      - w850
+      - w1000
+      - q500 #specific_humidity
+      - q850
+      - q1000
+      - r500 #relative_humidity
+      - r850
+      - r1000
